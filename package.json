@@ -2,12 +2,17 @@
   "name": "code-wars",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ivanStraltsou/code-wars.git"
   },
   "author": "ivan_straltsou@epam.com",
   "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start --single-run --browsers PhantomJS"
+  },
+  
   "devDependencies": {
     "karma": "^0.12.23",
     "karma-jasmine": "^0.1.5",
