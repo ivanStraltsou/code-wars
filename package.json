@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "description": "",
   "repository": {
-    type: "git",
-    url: "https://github.com/ivanStraltsou/code-wars.git"
+    "type": "git",
+    "url": "https://github.com/ivanStraltsou/code-wars.git"
   },
   "author": "ivan_straltsou@epam.com",
   "license": "MIT",
