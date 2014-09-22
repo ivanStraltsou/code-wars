@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/karma/bin/karma start --single-run --browsers Chrome"
+    "test": "./node_modules/.bin/karma start --single-run --browsers Chrome"
   },
   "author": "ivan_straltsou@epam.com",
   "license": "MIT",
