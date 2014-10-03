@@ -7,6 +7,14 @@ describe('pascal triangle test', function() {
     expect(pascal(100).length).toBe(100);
   });
 
+  it('level 3 items count', function() {
+    expect(pascal(100)[99].length).toBe(100);
+  });
+
+  it('level 3 items count', function() {
+    expect(pascal(10)[2].length).toBe(3);
+  });
+
   it('0', function() {
     expect(pascal(0)).toEqual([]);
   });
