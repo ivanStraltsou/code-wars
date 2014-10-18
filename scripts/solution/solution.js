@@ -1,25 +1,22 @@
 function solution(data) {
-  var fieldLength = data.length,
-      steps = fieldLength,
-      currentPosition = 0,
-      memory,
-      isInside;
-
-  if (fieldLength > 1) {
-    steps = 0;
-    memory = {};
-
-    do {
-      memory[currentPosition] = true;
-      currentPosition += data[currentPosition];
-      isInside = currentPosition < fieldLength;
-      console.log(data[currentPosition])
-      // increase steps number
-      steps++;
-    } while(isInside && !memory[currentPosition] && currentPosition > 0)
-
-    steps = isInside ? -1 : steps;
+  if (!(data instanceof Array)) {
+    throw new Error('Wrong input type is used');
   }
 
-  return steps;
+  var fieldLength = data.length,
+      currentPosition = 0,
+      steps = 0,
+      memory = {},
+      isInside;
+
+  do {
+    memory[currentPosition] = true;
+    currentPosition += data[currentPosition];
+    isInside = currentPosition < fieldLength;
+    steps++;
+  } while(isInside && !(currentPosition in memory) && currentPosition > 0)
+
+  return isInside ? solution.cantResolveResult : steps;
 }
+
+solution.cantResolveResult = -1;
