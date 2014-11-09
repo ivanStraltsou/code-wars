@@ -9,5 +9,3 @@ digital_root
 // 9 + 4 + 2 = 15 => 1 + 5 = 6
 digital_root(942); // 6
 ```
-
-
