@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/ivanStraltsou/code-wars.svg?branch=master)](https://travis-ci.org/ivanStraltsou/code-wars)
+checkMate
+================
+
 Дан многомерный массив состоящий из координат полей на шахматной доске. Написать функцию checkMate(), которая вернет
 такой же массив, где вместо координат клеток будут соответствующие им цвета.
 
