@@ -1,4 +1,15 @@
 function $(selector) {
+  var this_ = Object.create($.prototype);
+
+  this_.selector_ = selector;
+  this_.classNames_ = [];
+  this_.html_ = '';
+
+  return this_;
+}
+
+/*
+function $(selector) {
   return new $__init(selector);
 }
 
@@ -9,6 +20,7 @@ function $__init(selector) {
 }
 
 $__init.prototype = $.prototype;
+*/
 
 $.prototype.html = function(html) {
   var isSetter = html != null;
