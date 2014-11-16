@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/ivanStraltsou/code-wars.svg?branch=master)](https://travis-ci.org/ivanStraltsou/code-wars)
-validBraces
+$.prototype
 ================
 
 Выполните, пожалуйста, функцию $ так, чтобы методы addClass и html были вынесены в прототип.
