@@ -9,6 +9,7 @@ function $(selector) {
 }
 
 /*
+// alternative
 function $(selector) {
   return new $__init(selector);
 }
