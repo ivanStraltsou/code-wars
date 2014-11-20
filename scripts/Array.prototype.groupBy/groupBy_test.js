@@ -10,7 +10,7 @@ describe('prototype', function() {
     });
   });
 
-  it('accessor', function() {
+  it('iterator', function() {
     expect([1, 2, 3, 2, 4, 1, 5, 1, 6]
         .groupBy(function(val) {
           return val % 3;
@@ -22,7 +22,7 @@ describe('prototype', function() {
         });
   });
 
-  it('accessor stub', function() {
+  it('iterator stub', function() {
     expect([1, 3, 5, 7]
         .groupBy(function(val) {
           return 'a' + val;
@@ -35,7 +35,7 @@ describe('prototype', function() {
         });
   });
 
-  it('accessor stub', function() {
+  it('iterator context', function() {
     expect([1, 3, 5, 7]
         .groupBy(function(val) {
           return this.test + val;
@@ -46,5 +46,13 @@ describe('prototype', function() {
           context5: [5],
           context7: [7]
         });
+  });
+
+  it('empty result', function() {
+    expect([]
+        .groupBy(function(val) {
+          return this.test + val;
+        }, {test: 'context'}))
+        .toEqual({});
   });
 });
