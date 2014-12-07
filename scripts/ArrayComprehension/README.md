@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/ivanStraltsou/code-wars.svg?branch=master)](https://travis-ci.org/ivanStraltsou/code-wars)
-Implementing Array.prototype.groupBy method
+Haskell List Dot Notation
 ================
 
 [original kata](http://www.codewars.com/kata/53c8b29750fe70e4a2000610)
