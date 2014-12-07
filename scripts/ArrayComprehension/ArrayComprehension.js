@@ -3,7 +3,7 @@
  * @name ArrayComprehension
 
  * @description
- *
+ * @todo
  */
 function ArrayComprehension(options) {
   var generator, start, startIndex, parts, output;
@@ -56,6 +56,7 @@ ArrayComprehension.splitSymbol = ',';
 ArrayComprehension.generateRangeItems = function(start, end, step) {
   step = step || 1;
 
+  // @todo
   return (end < start && step > 0) || (end > start && step < 0) ?
          [] :
          Array.apply(null, new Array(Math.floor((end - start) / step) + 1)).map(function(value, index) {
