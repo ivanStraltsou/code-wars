@@ -29,10 +29,10 @@ For example, this is ok in both programming languages:
 * if step is negative and end < start then the list is [a, a+step, a+2*step, ...] as long as a-k*step >= end
 * otherwise the list is []
 
-Tests:
+###Tests:
 1. [2,3,-5,3] // just like in JavaScript : [2,3,-5,3]
 2. [1..5] // goes forward with step 1 : [1,2,3,4,5]
-3.  [1,3..7] // goes forward with step 2 (3 - 1) : [1,3,5,7]
+3. [1,3..7] // goes forward with step 2 (3 - 1) : [1,3,5,7]
 4. [6,5..3] // goes back with step -1 = (5 - 6) : [6,5,4,3]
 5. [6,4..0] // goes back with step -2 = (4 -6) : [6, 4, 2, 0]
 6. [5..3] // default step is 1 while the range is decreasing : []
