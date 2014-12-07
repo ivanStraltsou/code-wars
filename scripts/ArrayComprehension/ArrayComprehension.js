@@ -13,6 +13,7 @@ function ArrayComprehension(options) {
 
     parts = generator.split(ArrayComprehension.rangeSymbol);
 
+    // look for range notation
     if (parts.length > 1) {
       start = parts[0].split(ArrayComprehension.splitSymbol).map(Number);
       startIndex = start.length - 1;
@@ -24,6 +25,8 @@ function ArrayComprehension(options) {
       ));
 
     } else {
+      
+      // simple js-array notation
       output = generator.split(ArrayComprehension.splitSymbol).map(Number);
     }
 
