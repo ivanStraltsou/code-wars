@@ -10,7 +10,7 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/karma/bin/karma start --single-run --browsers Chrome Firefox"
+    "test": "./node_modules/karma/bin/karma start --single-run --browsers Chrome"
   },
   "devDependencies": {
     "karma": "^0.12.23",
