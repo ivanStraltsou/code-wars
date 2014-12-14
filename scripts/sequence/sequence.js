@@ -5,6 +5,8 @@ function sequence() {
     var result = executionQueue.shift().apply(null, arguments);
 
     if (executionQueue.length) {
+
+      // only context free/fixed functions are supported
       executionQueue[0] = executionQueue[0].bind(null, result);
     }
 
