@@ -11,5 +11,5 @@ function sequence() {
     }
 
     return executionQueue.length ? sequence.apply(null, executionQueue) : result;
-  }
+  };
 }
