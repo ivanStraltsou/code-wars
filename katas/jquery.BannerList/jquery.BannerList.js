@@ -117,4 +117,4 @@
 
     // Add `return this;` to enable chaining.
   };
-})(jQuery);
+})(this.jQuery || {});
