@@ -8,7 +8,7 @@ Implement `instanceOf` function to emulate `instanceof` operator behavior. It sh
 
 Hint
 
->! Checkout <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_blank">methods of the Object constructor</a>. It will help you to access the proto in legal way.
+> Checkout <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_blank">methods of the Object constructor</a>. It will help you to access the proto in legal way.
 
 ```js
 var newInstance = new YourObj();
