@@ -1,4 +1,5 @@
 (function($) {
+  var GOD = {Ajax: {}};
 
   GOD.Ajax.options = GOD.Ajax.options || {};
 
@@ -100,4 +101,4 @@
     }
   };
 
-})(this.jQuery || {});
+})(this.jQuery || {fn: {}});
