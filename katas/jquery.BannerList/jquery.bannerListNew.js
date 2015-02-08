@@ -100,4 +100,4 @@
     }
   };
 
-})(jQuery);
+})(this.jQuery || {});
