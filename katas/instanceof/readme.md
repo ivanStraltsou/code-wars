@@ -6,10 +6,6 @@ Everybody is familiar with `instanceof` operator. Does everyone know the way it 
 
 Implement `instanceOf` function to emulate `instanceof` operator behavior. It should be possible to mix it into any prototype.
 
-Hint
-
-> Checkout <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_blank">methods of the Object constructor</a>. It will help you to access the proto in legal way.
-
 ```js
 var newInstance = new YourObj();
 
@@ -21,3 +17,6 @@ newInstance.instanceOf(Object);
 // equals to `newInstance instanceof Object`
 instanceOf.call(newInstance, Object);
 ```
+
+
+> _Hint_. Checkout <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_blank">methods of the Object constructor</a>. It will help you to access the proto in legal way.
