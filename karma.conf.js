@@ -15,8 +15,8 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'karma-runtime/es5shim.js',
-      'scripts/**/*.js',
-      'scripts/**/*_test.js'
+      'katas/**/*.js',
+      'katas/**/*_test.js'
     ],
 
 

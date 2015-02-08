@@ -62,4 +62,4 @@ ArrayComprehension.generateRangeItems = function(start, end, step) {
          Array.apply(null, new Array(Math.floor((end - start) / step) + 1)).map(function(value, index) {
            return start + step * index;
          });
-}
+};

@@ -14,7 +14,7 @@ function solution(data) {
     currentPosition += data[currentPosition];
     isInside = currentPosition < fieldLength;
     steps++;
-  } while(isInside && !(currentPosition in memory) && currentPosition > 0)
+  } while(isInside && !(currentPosition in memory) && currentPosition > 0);
 
   return isInside ? solution.cantResolveResult : steps;
 }

@@ -26,7 +26,7 @@ describe('sequence function', function() {
     spy.multiply.calls.reset();
     spy.concat.calls.reset();
     spy.log.calls.reset();
-  })
+  });
 
   it('single invocation', function() {
     expect(sequence(spy.sum)(1, 1)).toEqual(2);
