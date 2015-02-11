@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		body, html {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			min-height: 100%;
+			box-sizing: border-box;
+
+			max-width: 1024px;
+			margin: 0 auto;
+			padding: 50px 0;
+
+			background: #f1f1f1;
+		}
+
+		.tetris {
+			text-align: center
+		}
+
+		.tetris canvas {
+			border: 1px solid #ccc;
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+		}
+
+		.tetris pre {
+			font-size: 18px;
+		}
+
+		.tetris pre span {
+			padding: 0 2px;
+		}
+	</style>
+</head>
+<body>
+
+<div class="container">
+	<div class="tetris" id="tetris1" tabindex="0"></div>
+	<div class="tetris" id="tetris2" tabindex="1"></div>
+</div>
+
+<script src="bundle.js"></script>
+
+</body>
+</html>
