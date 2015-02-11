@@ -1,0 +1,20 @@
+{
+  "name": "tetris",
+  "main": "tetris.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ivanStraltsou/code-wars",
+  "authors": [
+    "ivanStraltsou <ivan_straltsou@epam.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "paper": "~0.9.21"
+  }
+}
