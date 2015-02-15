@@ -17,6 +17,7 @@ Don't forget about the last execution index
 > [Original kata](http://www.codewars.com/kata/5303b2d6af7e3b414300056d)
 
 ### Ex. 2. RegExp crossword
+#### "Royal Dinner"
 
 || (FI&#124;A)+ | (YE&#124;OT)K | (.)[IF]+ | [NODE]+ | (FY&#124;F&#124;RG)+ |
 |-----:|---------|----------|----------|---------|------------|
