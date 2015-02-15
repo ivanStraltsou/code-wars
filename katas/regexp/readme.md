@@ -8,8 +8,10 @@ Don't forget about the last execution index
 ```js
   var regex = /^[abc]/gim;
 
+  regex.clone().exec("ZZ\nZZCZ\nCZZ\na") // ["C"]
   regex.exec("ZZ\nZZCZ\nCZZ\na"); // ["C"]
   regex.clone().exec("ZZ\nZZCZ\nCZZ\na") // ["a"]
+  regex.exec("ZZ\nZZCZ\nCZZ\na"); // ["a"]
 ```
 
->! [original kata](http://www.codewars.com/kata/5303b2d6af7e3b414300056d)
+> [Original kata](http://www.codewars.com/kata/5303b2d6af7e3b414300056d)
