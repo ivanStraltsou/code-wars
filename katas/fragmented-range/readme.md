@@ -4,9 +4,8 @@ Let's imagine we have a range-picker and for some reason we need different fragm
 
 e.g. I would like to have an opportunity to configure the following range - step is different for different intervals (values can be of any type) :
 
-```
-[10, 20, 30, 40, 50, 51, 52, 53, ..., 70, 80, 90, 100]
-```
+[10, 20, 30, 40, **50, 51, 52, 53, ..., 69, 70**, 80, 90, 100]
+
 
 The ouput will contain component constructor - FragmentedRangePicker(options: Object).
 
