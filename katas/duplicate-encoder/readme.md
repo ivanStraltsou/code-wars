@@ -8,7 +8,7 @@ Ignore capitalization when determining if a character is a duplicate.
 
 Examples:
 
-```
+```js
 function encodeDuplicate(str) {
   //...
 }
