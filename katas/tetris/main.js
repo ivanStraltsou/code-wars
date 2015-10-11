@@ -1,3 +1,5 @@
+/// <reference path="Tetris.ts" />
+
 var Tetris = require('./tetris');
 
 var container1 = document.getElementById('tetris1');

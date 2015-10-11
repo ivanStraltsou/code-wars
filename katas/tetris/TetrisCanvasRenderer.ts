@@ -22,7 +22,7 @@ TetrisCanvasRenderer.options = {
   itemSize: 25
 };
 
-TetrisCanvasRenderer.prototype.renderGrid = function() {
+TetrisCanvasRenderer.prototype.renderGrid = function () {
   var i = this.m;
 
   while (i--) {
@@ -55,21 +55,19 @@ TetrisCanvasRenderer.prototype.renderGrid = function() {
 
 };
 
-TetrisCanvasRenderer.prototype.clear = function() {
-  this.project.getActiveLayer().clear();
+TetrisCanvasRenderer.prototype.clean = function () {
+  this.project.getActiveLayer().clean();
 };
 
-TetrisCanvasRenderer.prototype.render = function(matrix) {
+TetrisCanvasRenderer.prototype.render = function (matrix: number[][] = []) {
   var itemSize = this.itemSize;
 
-  this.clear();
+  this.clean();
   this.renderGrid();
 
-  matrix = matrix || [];
+  matrix.forEach(function (row, rowIndex) {
 
-  matrix.forEach(function(row, rowIndex) {
-
-    row.forEach(function(item, columnIndex) {
+    row.forEach(function (item, columnIndex) {
 
       if (item) {
         var rect = new paper.Rectangle(columnIndex * itemSize, rowIndex * itemSize, itemSize - 1, itemSize - 1);
