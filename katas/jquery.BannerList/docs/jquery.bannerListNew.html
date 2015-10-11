@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>jquery.bannerListNew.js</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	<link rel="stylesheet" media="all" href="docco.css"/>
+</head>
+<body>
+<div id="container">
+	<div id="background"></div>
+
+	<ul id="jump_to">
+		<li>
+			<a class="large" href="javascript:void(0);">Jump To &hellip;</a>
+			<a class="small" href="javascript:void(0);">+</a>
+
+			<div id="jump_wrapper">
+				<div id="jump_page">
+
+
+					<a class="source" href="jquery.BannerList.html">
+						jquery.BannerList.js
+					</a>
+
+
+					<a class="source" href="jquery.bannerListNew.html">
+						jquery.bannerListNew.js
+					</a>
+
+				</div>
+		</li>
+	</ul>
+
+	<ul class="sections">
+
+		<li id="title">
+			<div class="annotation">
+				<h1>jquery.bannerListNew.js</h1>
+			</div>
+		</li>
+
+
+		<li id="section-1">
+			<div class="annotation">
+
+				<div class="pilwrap ">
+					<a class="pilcrow" href="#section-1">&#182;</a>
+				</div>
+
+			</div>
+
+			<div class="content">
+				<div class='highlight'><pre>(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">($)</span> </span>{
+
+  GOD.Ajax.options = GOD.Ajax.options || {};
+
+  GOD.Ajax.options.bannerList = {
+    root: <span class="hljs-string">'xxx'</span>,
+    path: <span class="hljs-string">'lists'</span>,
+    key: <span class="hljs-string">'default'</span>
+  };
+
+  GOD.Ajax.getBannerListUrl = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(options)</span> </span>{
+    <span class="hljs-keyword">return</span> [
+      options &amp;&amp; options.root || <span class="hljs-keyword">this</span>.options.bannerList.root,
+      options &amp;&amp; options.path || <span class="hljs-keyword">this</span>.options.bannerList.path,
+      options &amp;&amp; options.url || <span class="hljs-keyword">this</span>.options.bannerList.url
+    ].join(<span class="hljs-string">'/'</span>);
+  };
+
+  GOD.Ajax.getBannerList = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(key, root)</span> </span>{
+    <span class="hljs-keyword">return</span> $.ajax({
+      type: <span class="hljs-string">'GET'</span>,
+      url: GOD.Ajax.getBannerListUrl({
+        root: root,
+        url: key
+      }),
+      dataType: <span class="hljs-string">'json'</span>,
+      cache: <span class="hljs-literal">false</span>,
+      error: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(xhr, ajaxOptions, thrownError)</span> </span>{
+        GOD.Ajax.checkError(xhr, ajaxOptions, thrownError);
+      }
+    });
+  };
+
+  $.fn.bannerList = (<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">var</span> id_ = <span class="hljs-number">0</span>;
+
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(options)</span> </span>{
+      <span class="hljs-keyword">var</span> $list;
+      <span class="hljs-keyword">var</span> self = <span class="hljs-keyword">this</span>;
+
+      options = $.extend({}, $.fn.bannerList.defaults, options);
+
+      id_ += <span class="hljs-number">1</span>;
+
+      $list = $(<span class="hljs-string">'&lt;div&gt;'</span>, {
+        id: options.id + id_
+      });
+
+      GOD.Ajax
+        .getBannerList(options.listKey, options.serviceRoot)
+        .done(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(data)</span> </span>{
+          <span class="hljs-keyword">var</span> index = <span class="hljs-number">0</span>;
+
+          <span class="hljs-keyword">if</span> (data.ListItems) {
+
+            $.each(data.ListItems, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(key, listItem)</span> </span>{</pre>
+				</div>
+			</div>
+
+		</li>
+
+
+		<li id="section-2">
+			<div class="annotation">
+
+				<div class="pilwrap ">
+					<a class="pilcrow" href="#section-2">&#182;</a>
+				</div>
+				<p>use source from properties or generate with index</p>
+
+			</div>
+
+			<div class="content">
+				<div class='highlight'>
+					<pre>              <span class="hljs-keyword">var</span> imageSrc = listItem.Properties ? listItem.Properties[<span class="hljs-number">0</span>].Value : options.img.src(index + <span class="hljs-number">1</span>);</pre>
+				</div>
+			</div>
+
+		</li>
+
+
+		<li id="section-3">
+			<div class="annotation">
+
+				<div class="pilwrap ">
+					<a class="pilcrow" href="#section-3">&#182;</a>
+				</div>
+				<p>generate image-link or use name text as content</p>
+
+			</div>
+
+			<div class="content">
+				<div class='highlight'><pre>              <span class="hljs-keyword">var</span> content = listItem.Link ? options.getImageLink(listItem.Link, imageSrc) : listItem.Name;
+
+              $list.before(
+                $(<span class="hljs-string">'&lt;div&gt;'</span>, {
+                    id: [id_, options.itemId, index].join(<span class="hljs-string">''</span>),
+                    <span class="hljs-string">'class'</span>: options.itemClassName
+                  })
+                  .html(content)
+
+                  <span class="hljs-comment">/* show first item only */</span>
+                  .toggle(index === <span class="hljs-number">0</span>)
+              );
+
+              index += <span class="hljs-number">1</span>;
+            });
+          }
+
+          options.onSuccess($list);
+          self.prepend($list);
+
+        });
+
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    };
+  })();
+
+  $.fn.bannerList.defaults = {
+    id: <span class="hljs-string">'loadingDiv_'</span>,
+    itemId: <span class="hljs-string">'banner'</span>,
+    itemClassName: <span class="hljs-string">'banner'</span>,
+    onSuccess: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{},
+    getImageLink: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(url, src)</span> </span>{
+      <span class="hljs-keyword">return</span> [<span class="hljs-string">'&lt;a href='</span>, url, <span class="hljs-string">'&gt; &lt;img src='</span>, src, <span class="hljs-string">'/&gt;&lt;/a&gt;'</span>].join(<span class="hljs-string">'"'</span>);
+    },
+    img: {
+      src: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(id)</span> </span>{
+        <span class="hljs-keyword">return</span> [<span class="hljs-string">'Customers/HiddenName/Content/images/panel/panel'</span>, id || <span class="hljs-number">1</span>, <span class="hljs-string">'-sml.jpg'</span>].join(<span class="hljs-string">''</span>);
+      }
+    }
+  };
+
+})(jQuery);</pre>
+				</div>
+			</div>
+
+		</li>
+
+	</ul>
+</div>
+</body>
+</html>
