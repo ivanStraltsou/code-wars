@@ -1,6 +1,6 @@
-Description:
+####Description:
 
-Implement a function move_zeros which takes two arguments first an array of numbers arrNum and second a Boolean value isRight (default is true) and returns the array with all zero to right if isRight is true else to left if isRight is false.
+Implement a function moveZeros which takes two arguments first an array of numbers arrNum and second a Boolean value isRight (default is true) and returns the array with all zero to right if isRight is true else to left if isRight is false.
 
 Tips: Order of other numbers should not change.
 
