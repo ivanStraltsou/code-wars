@@ -29,6 +29,6 @@ var presents = [
 ];
 ```
 
-#####[Original Kata](http://www.codewars.com/kata/present-scanner)
+#####[Original Kata](http://www.codewars.com/kata/guess-the-gifts)
 
 Good luck
