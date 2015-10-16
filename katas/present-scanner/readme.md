@@ -24,7 +24,7 @@ var wishlist = [
     {name: 'gubozakatochnaya machine', size: 'small', weight: 'light', clatters: 'a bit'}
 ];
 var presents = [
-    {size: "small", weight: "light", clatters: "yes"},
+    {size: "huge", weight: "heavy", clatters: "who knows"},
     {size: "medium", weight: "medium", clatters: "no"}
 ];
 ```
