@@ -12,7 +12,7 @@ Possible values for weight: "light", "3 kg", "medium", "heavy".
 The return value must be an array of the names of items from your wishlist, e.g. ["Toy Car", "Card Game"].
 Don't add any item more than once to the result.
 The order of names in the returned array doesn't matter.
-It's impossible, that multiple items from your wish list have the same attribute values. If they match the attributes of one of the presents, choose the first one from wishlist.
+It's impossible, that multiple items from your wish list have the same attribute values. If they match the attributes of multiple presents, choose the first one from wishlist. If two presents matches the same item from wishlist choose next present from wishlist which suits the best.
 
 ####Example:
 
