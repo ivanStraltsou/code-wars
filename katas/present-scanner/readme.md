@@ -32,6 +32,8 @@ var presents = [
 ];
 ```
 
+See [tests in present-scanner_test.js](https://github.com/ivanStraltsou/code-wars/blob/master/katas/present-scanner/present-scanner_test.js)
+
 #####[Original Kata](http://www.codewars.com/kata/guess-the-gifts)
 
 Good luck
