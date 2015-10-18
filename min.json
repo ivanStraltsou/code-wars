@@ -1,1 +1,10 @@
-<p>Решения <a href=\"https://epa.ms/CodeWars58\">прошлой задачи</a> прислали:</p><ul><li><a href=\"http://jsfiddle.net/aLhu79fL/\">Sviataslau Karankou</a></li><li><a href=\"http://jsfiddle.net/ArtiFisher/40yzLub6/\">Artsiom Rybakou</a></li></ul><p>Новое задание можно найти <a href=https://epa.ms/CodeWars59>здесь</a>.</p><p><a href=\"mailto:Ivan_Straltsou@epam.com?cc=Egor_Miasnikov@epam.com&subject=Frontend%20Digest%20-%20Code%20Wars\">Прислать свою задачу или решение текущей</a></p>
+{
+  "title": "CODE WARS",
+  "articles": [
+    {
+      "title": "",
+      "url": "",
+      "text": "<p>На прошлой неделе успешно <a href=\"https://epa.ms/code-wars-60\">двигали нули</a>: Pavlo Evsegneev, Dmitrii Samsonov, <a href=\"http://www.codewars.com/users/kirilloid\">Kirill Sukhomlin</a>, Ilya Valasiuk, Ihar Daineka, <a href=\"https://github.com/MariMax\">MariMax</a>, Dzmitry Avdeev, Arseni Prokharchyk, Artsiom Aliakseichyk, Stanislau Tsiuryn, Elena Zhdanova, Maryia Finskaya.</p><p>Среди всех решений прослеживается общая тенденция с использованием ES6, плюс у каждого свой способ задания `дефолтного` значения для аргументов.</p><p>Так как задача была далеко не самой сложной, большинство решений разделилось на 2 группы (<a href=\"http://www.codewars.com/kata/reviews/55c098c1aa1e89cf9f0002f3/groups/561bad8b88f3ea20a3000129?show-solutions=1\">двойной фильтр с небольшими вариациями</a>, <a href=\"https://gist.github.com/ivanStraltsou/339d2c7104a6a4b8a4b3\">один проход</a>)</p><p>А я бы хотел обратить внимание на вариант от <a href=\"http://jsfiddle.net/Shumsky/1zfgref6/\">Stanislau Tsiuryn</a>. Мы не рекомендуем массово использовать такие конструкции, но предлагаем вам пробежаться по коду и понять, как это работает.</p><p>А новое задание можно найти <a href=\"https://epa.ms/code-wars-61\">здесь</a>.</p><p><a href=\"mailto:Ivan_Straltsou@epam.com;Aliaksandr_Vinober@epam.com?cc=Egor_Miasnikov@epam.com&subject=Frontend%20Digest%20-%20Code%20Wars\">Прислать свою задачу или решение текущей</a></p>"
+    }
+  ]
+}
