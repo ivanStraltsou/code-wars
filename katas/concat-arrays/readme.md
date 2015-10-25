@@ -1,6 +1,6 @@
 ####Description:
 
-Implement a function concatArrays which takes two arrays of random length as arguments and returns a result array such as follows:
+Implement a function concatArrays which takes two arrays of random length as arguments and returns sum of array items such as follows:
 
 
 ####Example:
