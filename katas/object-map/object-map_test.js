@@ -44,7 +44,7 @@ describe('object map', function() {
   });
   
   it('empty treasure', function() {
-    var map = ['response2',2, 'element'];
+    var map = ['response2', 2, 'element'];
     expect(findTreasure(testObject, map)).toEqual(null);
   });
 });
