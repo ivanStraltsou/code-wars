@@ -1,0 +1,3 @@
+function findTreasure(targetObject, objectMap) {
+
+};
