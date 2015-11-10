@@ -16,7 +16,7 @@ describe('best path', function() {
 
         path2 = {
             name: 'path2',
-            time: [20, 15],
+            time: [20, 10],
             distance: [12, 10]
         };
     });
@@ -26,6 +26,6 @@ describe('best path', function() {
   });
 
   it('real world', function() {
-    expect(chooseBestPath(path1, path2)).toEqual('path2');
+    expect(chooseBestPath(path1, path2)).toEqual('path1');
   });
 });
