@@ -14,7 +14,7 @@ helper.pageItemCount(0); //=> returns 4
 helper.pageIndex(5); //=> returns 1 (zero based index)
 ```
 
-See [tests in pagination-helper_test.js](https://github.com/ivanStraltsou/code-wars/blob/master/katas/pagination-helper/pagination-helper_test.js)
+See [tests in pagination-helper_test.js](https://github.com/ivanStraltsou/code-wars/blob/master/katas/PaginationHelper/pagination-helper_test.js)
 #####[Original Kata](http://www.codewars.com/kata/paginationhelper)
 
 Good luck
