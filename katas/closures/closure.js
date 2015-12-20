@@ -1,0 +1,2 @@
+var Cat = (function () {
+}());
