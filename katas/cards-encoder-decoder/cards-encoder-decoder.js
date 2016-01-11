@@ -1,0 +1,2 @@
+var cardsConverter = function (input) {
+};
