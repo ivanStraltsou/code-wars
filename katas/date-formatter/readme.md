@@ -1,6 +1,6 @@
 ####Description:
 
-Implement a function formatDate which take date object and format as arguments and returns formatted string such as follows:
+Implement a function formatDate which takes date object and format as arguments and returns formatted string such as follows:
 
 
 ####Example:
