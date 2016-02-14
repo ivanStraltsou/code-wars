@@ -23,6 +23,8 @@ prefill(3, prefill(2,'2d')) //=> returns [['2d','2d'],['2d','2d'],['2d','2d']]
 prefill("xyz", 1) //=> throws TypeError with message "xyz is invalid"
 ```
 
+See [tests in prefill-an-array_test.js](https://github.com/ivanStraltsou/code-wars/blob/master/katas/prefill-an-array/prefill-an-array_test.js)
+
 #####[Original Kata](http://www.codewars.com/kata/prefill-an-array)
 
 Good luck
