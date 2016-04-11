@@ -20,7 +20,8 @@ createInvitationList([
     },
     {
         name: 'ms. Johnes',
-        friends: 'ms. Stivens'
+        friends: 'ms. Stivens',
+        places: 1
     },
     {
         name: 'Nikolai and Olga',
@@ -35,14 +36,12 @@ createInvitationList([
         places: 3
     },
     {
-        name: Nikolai and Olga,
-        friends:,
-        enemies: ,
-        children: true,
-        places: 3
+        name: 'Billy',
+        friends: 'Jerry',
+        places: 2,
+        notes: 'Billy drinks too much, it would be better to reserve some extra place right behind Billy to let him sleep when he needs it'
     }
-
-]) //=> returns ['Nikolai and Olga places 1,2,3', 'Tanya and Konstantin places 4,5,6', 'Jerry place 7', 'ms. Johnes place 8', 'ms. Stivens place 9']
+]) //=> returns ['Nikolai and Olga places 1,2,3', 'Tanya and Konstantin places 4,5,6', 'Jerry place 7', 'Billy place 8', 'ms. Johnes place 9', 'ms. Stivens place 10']
 ```
 
 #####[Original Story](http://www.exler.ru/novels/wife.htm)
