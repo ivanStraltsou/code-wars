@@ -4,6 +4,7 @@ I remember "Programmer fiance notes" by Eksler as a very funny story. In this st
 challenge to automatically create invitation list. I would like to ask you to solve this problem.
 
 Just imagine that you are those guy and make invitation list with seats. Don't place enemies together, try to put closer guys who know each other and reserve places at the beginning or in the end for guests with children.
+You are free to extend property list.
 
 ####Example:
 
@@ -41,7 +42,7 @@ createInvitationList([
         places: 3
     }
 
-]) //=> returns ['Nikolai and Olga places 1,2,3', 'Tanya and Konstantin places 2,3,4', 'Jerry place 5', 'ms. Johnes place 6', 'ms. Stivens place 7']
+]) //=> returns ['Nikolai and Olga places 1,2,3', 'Tanya and Konstantin places 4,5,6', 'Jerry place 7', 'ms. Johnes place 8', 'ms. Stivens place 9']
 ```
 
 #####[Original Story](http://www.exler.ru/novels/wife.htm)
