@@ -3,12 +3,25 @@
 I remember "Programmer fiance notes" by Eksler as a very funny story. In this story was described love story of a programmer and pretty girl. Right before the wedding, programmer faced with a
 challenge to automatically create invitation list. I would like to ask you to solve this problem.
 
-Just imagine that you are those guy and make invitation list with seats. Don't place enemies together, try to put closer guys who know each other and reserve places at the beginning or in the end for guests with children.
-You are free to extend property list.
+Just imagine that you are those guy and make invitation list with seats. Don't place enemies together, try to put closer guys who know each other.
+Let's assume that there would be on big table. You are free to extend property list.
 
 ####Example:
 
 ```js
+// table and sitting places example
+//     10 9 8
+//     ------
+// 11 |      | 7
+// 12 |      | 6
+// 13 |      | 5
+// 14 |      | 4
+// 15 |      | 3
+// 16 |      | 2
+// 17 |      | 1
+//     ------
+//    18 19 20
+
 createInvitationList([
     {
         name: 'Jerry'
@@ -21,27 +34,29 @@ createInvitationList([
     {
         name: 'ms. Johnes',
         friends: 'ms. Stivens',
-        places: 1
     },
     {
-        name: 'Nikolai and Olga',
-        friends: 'Tanya and Konstantin',
-        children: true,
-        places: 3
+        name: 'Nikolai',
+        friends: 'Olga, Tanya, Konstantin',
     },
     {
-        name: 'Tanya and Konstantin',
-        friends: 'Nikolai and Olga',
-        children: 2,
-        places: 3
+        name: 'Olga',
+        friends: 'Nikolai, Tanya, Konstantin',
+    },
+    {
+        name: 'Tanya',
+        friends: 'Konstantin, Nikolai, Olga',
+    },
+    {
+        name: 'Konstantin',
+        friends: 'Tanya, Nikolai, Olga',
     },
     {
         name: 'Billy',
         friends: 'Jerry',
-        places: 2,
-        notes: 'Billy drinks too much, it would be better to reserve some extra place right behind Billy to let him sleep when he needs it'
+        notes: 'Billy drinks too much, never place Jerry close to him'
     }
-]) //=> returns ['Nikolai and Olga places 1,2,3', 'Tanya and Konstantin places 4,5,6', 'Jerry place 7', 'Billy place 8', 'ms. Johnes place 9', 'ms. Stivens place 10']
+]) //=> returns ['Nikolai place 1', 'Olga place 2', 'Tanya places 3', 'Konstantin place 4', 'Jerry place 5', 'Billy place 6', 'ms. Johnes place 7', 'ms. Stivens place 8']
 ```
 
 #####[Original Story](http://www.exler.ru/novels/wife.htm)
