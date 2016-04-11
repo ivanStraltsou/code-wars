@@ -3,8 +3,8 @@
 I remember "Programmer fiance notes" by Eksler as a very funny story. In this story was described love story of a programmer and pretty girl. Right before the wedding, programmer faced with a
 challenge to automatically create invitation list. I would like to ask you to solve this problem.
 
-Just imagine that you are those guy and make invitation list with seats. Don't place enemies together, try to put closer guys who know each other.
-Let's assume that there would be on big table. Opposite seats (like 1 and 17) for friendly or neutral relationships.
+Just imagine that you are a groom and make perfect invitation list with seats. Don't place enemies together, try to put closer guys who know each other.
+Let's assume that there would be on big table. Opposite seats (like 1 and 17) for friendly or neutral relationships. You are free to change something.
 
 ####Example:
 
