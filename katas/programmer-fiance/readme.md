@@ -4,7 +4,7 @@ I remember "Programmer fiance notes" by Eksler as a very funny story. In this st
 challenge to automatically create invitation list. I would like to ask you to solve this problem.
 
 Just imagine that you are those guy and make invitation list with seats. Don't place enemies together, try to put closer guys who know each other.
-Let's assume that there would be on big table. You are free to extend property list.
+Let's assume that there would be on big table. Opposite seats (like 1 and 17) for friendly or neutral relationships.
 
 ####Example:
 
@@ -24,39 +24,33 @@ Let's assume that there would be on big table. You are free to extend property l
 
 createInvitationList([
     {
-        name: 'Jerry'
+        name: 'Jerry',
+        manualPlacing: 8    //if person drinks too much it would be better to place him to the corner
     },
     {
         name: 'ms. Stivens',
         friends: 'ms. Johnes',
-        enemies: 'Jerry',
+        enemies: 'Jerry'
     },
     {
         name: 'ms. Johnes',
         friends: 'ms. Stivens',
     },
     {
-        name: 'Nikolai',
-        friends: 'Olga, Tanya, Konstantin',
+        name: 'Nikolai and Olga',
+        friends: 'Tanya and Konstantin',
+        places: 2
     },
     {
-        name: 'Olga',
-        friends: 'Nikolai, Tanya, Konstantin',
-    },
-    {
-        name: 'Tanya',
-        friends: 'Konstantin, Nikolai, Olga',
-    },
-    {
-        name: 'Konstantin',
-        friends: 'Tanya, Nikolai, Olga',
+        name: 'Tanya and Konstantin',
+        friends: 'Nikolai and Olga',
+        places: 3   //they have a baby
     },
     {
         name: 'Billy',
-        friends: 'Jerry',
-        notes: 'Billy drinks too much, never place Jerry close to him'
+        friends: 'Jerry'
     }
-]) //=> returns ['Nikolai place 1', 'Olga place 2', 'Tanya places 3', 'Konstantin place 4', 'Jerry place 5', 'Billy place 6', 'ms. Johnes place 7', 'ms. Stivens place 8']
+]) //=> returns ['ms. Stivens place 1', 'ms. Johnes place 2', 'Nikolai and Olga places 3,4', 'Tanya and Konstantin places 5,6,7', 'Jerry place 8', 'Billy place 9']
 ```
 
 #####[Original Story](http://www.exler.ru/novels/wife.htm)
