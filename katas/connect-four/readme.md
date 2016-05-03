@@ -20,5 +20,6 @@ connectFour(board); //returns 'R';
 ```
 
 See [tests in connect-four_test.js](https://github.com/ivanStraltsou/code-wars/blob/master/katas/connect-four/connect-four_test.js)
+#####[Original Kata](http://www.codewars.com/kata/connect-four-who-won)
 
 Good luck
