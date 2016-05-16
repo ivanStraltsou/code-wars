@@ -11,6 +11,8 @@ simplify('a+ca-ab') //=> returns 'a-ab+ac'
 simplify('-y+x') //=> returns 'x-y'
 ```
 
+See [tests in simplifing-multilinear-polynomials_test.js](https://github.com/ivanStraltsou/code-wars/blob/master/katas/simplifing-multilinear-polynomials/simplifing-multilinear-polynomials_test.js)
+
 Good luck
 
 #####[Original Kata](http://www.codewars.com/kata/simplifing-multilinear-polynomials)
