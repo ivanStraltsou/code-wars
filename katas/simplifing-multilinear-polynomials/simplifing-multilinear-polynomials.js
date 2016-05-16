@@ -1,0 +1,3 @@
+function simplify(poly) {
+
+}
