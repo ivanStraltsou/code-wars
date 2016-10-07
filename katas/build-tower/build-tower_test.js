@@ -1,4 +1,4 @@
-fdescribe('build tower', function() {
+describe('build tower', function() {
   it('should return tower with 3 floors', function() {
     expect(buildTower(3)).toEqual([
       '  *  ',
